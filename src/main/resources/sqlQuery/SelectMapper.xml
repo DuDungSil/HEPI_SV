@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hepi.hepi_sv.myBatis.SelectMapper">
+
+    <select id="selectUser">
+        SELECT NAME
+             , ID
+             , PWD
+             , PHONE
+             , GYM
+        FROM user
+    </select>
+
+    <select id="selectProduct">
+        SELECT ID
+             , NAME
+             , PRICE
+             , `EXPLAIN`
+             , EVENT
+             , MAIN_IMAGE
+             , AMOUNT
+             , (select UNIT_DATA from product_unit where UNIT = UNIT_ID ) as UNIT
+        FROM product
+    </select>
+
+    <select id="selectMyProduct">
+        SELECT ID
+             , NAME
+             , PRICE
+             , `EXPLAIN`
+             , EVENT
+             , MAIN_IMAGE
+             , MY_AMOUNT
+             , AMOUNT
+             , (select UNIT_DATA from product_unit where UNIT = UNIT_ID ) as UNIT
+        FROM product p, user_pocket up
+        where up.USER_ID = #{USER_ID, jdbcType=CHAR}
+          and up.PRODUCT_ID = p.ID
+    </select>
+
+</mapper>
+
