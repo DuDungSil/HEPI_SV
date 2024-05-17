@@ -1,9 +1,6 @@
 package org.hepi.hepi_sv.controller;
 
-import org.hepi.hepi_sv.service.LoginService;
-import org.hepi.hepi_sv.service.MainService;
-import org.hepi.hepi_sv.service.ProductService;
-import org.hepi.hepi_sv.service.RequestService;
+import org.hepi.hepi_sv.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +21,12 @@ public class FltController {
     @RequestMapping("/login")
     public String login(@RequestBody HashMap<String, String> request){
         requestService = new LoginService(request);
+        return requestService.execute();
+    }
+
+    @RequestMapping("/eventImage")
+    public String eventImage(){
+        requestService = new EventImageService();
         return requestService.execute();
     }
 

@@ -1,6 +1,7 @@
 package org.hepi.hepi_sv.service;
 
 import org.hepi.hepi_sv.myBatis.SelectMapper;
+import org.hepi.hepi_sv.vo.EventImage;
 import org.hepi.hepi_sv.vo.MyProduct;
 import org.hepi.hepi_sv.vo.Product;
 import org.hepi.hepi_sv.vo.User;
@@ -21,17 +22,20 @@ public class MainService implements InitializingBean {
 
     private Map<String ,User> userMap;
     private Map<Integer , Product> productMap;
+    private Map<Integer, EventImage> eventImageMap;
 
     @Override
     public void afterPropertiesSet() throws Exception {
         userMap = new HashMap<String, User>();
         productMap = new HashMap<Integer, Product>();
+        eventImageMap = new HashMap<Integer, EventImage>();
         init();
     }
 
     private void init() {
         loadUserMap();
         loadProductMap();
+        loadEventImageMap();
     }
 
     private void loadUserMap() {
@@ -58,8 +62,24 @@ public class MainService implements InitializingBean {
         System.out.println("Loading Product List Done - [ " + this.productMap.size() + " ]") ;
     }
 
+    private void loadEventImageMap() {
+        System.out.println("Loading EventImage ...");
+        synchronized (eventImageMap)
+        {
+            this.eventImageMap.clear();
+            selectMapper.selectEventImage().forEach(e -> {
+                this.eventImageMap.put(e.getId(), e);
+            });
+        }
+        System.out.println("Loading EventImage List Done - [ " + this.eventImageMap.size() + " ]") ;
+    }
+
     public User getUser(String id) {
         return userMap.get(id);
+    }
+
+    public List<EventImage> getEventImage() {
+        return new ArrayList<>(eventImageMap.values());
     }
 
     public List<Product> getEventProduct() {

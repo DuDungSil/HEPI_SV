@@ -39,5 +39,11 @@
           and up.PRODUCT_ID = p.ID
     </select>
 
+    <select id="selectEventImage">
+        SELECT ID
+             , URL
+        FROM event_image
+    </select>
+    
 </mapper>
 
