@@ -1,14 +1,14 @@
 package org.hepi.hepi_sv.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.hepi.hepi_sv.errorHandler.ErrorHandler;
 import org.hepi.hepi_sv.util.ApplicationContextProvider;
-import org.hepi.hepi_sv.vo.Product;
 
 import java.util.HashMap;
 import java.util.List;
 
 public class ProductService implements RequestService {
-    MainService mainService = (MainService) ApplicationContextProvider.getBean("mainService");
+    DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
 
     String type;
     HashMap<String, String> request;
@@ -25,15 +25,19 @@ public class ProductService implements RequestService {
         switch (type)
         {
             case "event":
-                list = mainService.getEventProduct();
+                list = databaseService.selectEventProduct();
                 System.out.println(list);
                 break;
             case "mine":
-                list = mainService.getMyProduct(request.get("id"));
+                list = databaseService.selectMyProduct(request.get("id"));
+                System.out.println(list);
+                break;
+            case "cart":
+                list = databaseService.selectCartProduct(request.get("id"));
                 System.out.println(list);
                 break;
             default:
-                list = mainService.getEventProduct();
+                list = databaseService.selectEventProduct();
                 break;
         }
 
@@ -42,8 +46,8 @@ public class ProductService implements RequestService {
             ObjectMapper objectMapper = new ObjectMapper();
             productJson = objectMapper.writeValueAsString(list);
         } catch (Exception e) {
-            System.out.println("에러 발생");
-            productJson = "에러 발생";
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
         }
         return productJson;
     }

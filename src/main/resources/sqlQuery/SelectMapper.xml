@@ -10,18 +10,22 @@
              , PHONE
              , GYM
         FROM user
+       WHERE ID = #{USER_ID, jdbcType=CHAR}
     </select>
 
-    <select id="selectProduct">
+    <select id="selectEventProduct">
         SELECT ID
              , NAME
              , PRICE
              , `EXPLAIN`
              , EVENT
              , MAIN_IMAGE
+             , -1 AS MY_AMOUNT
              , AMOUNT
              , (select UNIT_DATA from product_unit where UNIT = UNIT_ID ) as UNIT
+             , DISCOUNT
         FROM product
+       WHERE EVENT = 1
     </select>
 
     <select id="selectMyProduct">
@@ -34,9 +38,26 @@
              , MY_AMOUNT
              , AMOUNT
              , (select UNIT_DATA from product_unit where UNIT = UNIT_ID ) as UNIT
+             , DISCOUNT
         FROM product p, user_pocket up
         where up.USER_ID = #{USER_ID, jdbcType=CHAR}
           and up.PRODUCT_ID = p.ID
+    </select>
+
+    <select id="selectCartProduct">
+        SELECT ID
+             , NAME
+             , PRICE
+             , `EXPLAIN`
+             , EVENT
+             , MAIN_IMAGE
+             , -1 AS MY_AMOUNT
+             , AMOUNT
+             , (select UNIT_DATA from product_unit where UNIT = UNIT_ID ) as UNIT
+             , DISCOUNT
+        FROM product p, user_cart uc
+        where uc.USER_ID = #{USER_ID, jdbcType=CHAR}
+          and uc.PRODUCT_ID = p.ID;
     </select>
 
     <select id="selectEventImage">
