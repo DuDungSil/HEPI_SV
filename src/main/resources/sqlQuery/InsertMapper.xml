@@ -4,12 +4,20 @@
 <mapper namespace="org.hepi.hepi_sv.myBatis.InsertMapper">
 
     <insert id="insertUser">
-        INSERT INTO user(NAME, ID, PWD, PHONE, GYM)
+        INSERT INTO user(NAME, ID, PWD, PHONE, GYM_ID)
         VALUES (#{user.name},
                 #{user.id},
                 #{user.pwd},
                 #{user.phone},
-                NULL)
+                #{user.gym_id})
+    </insert>
+
+    <insert id="insertMyChat">
+        INSERT INTO chatting(`TIME`, GYM_ID, USER_ID, MESSAGE)
+        VALUES (now(),
+                (select GYM_ID from user where ID=#{user_id}),
+                #{user_id},
+                #{message})
     </insert>
 
 </mapper>

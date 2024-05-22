@@ -11,8 +11,8 @@ public class RegisterService implements RequestService {
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
 
     private HashMap<String, String> request;
-    public RegisterService(HashMap<String, String> registerRequest) {
-        this.request = registerRequest;
+    public RegisterService(HashMap<String, String> request) {
+        this.request = request;
     }
 
     @Override
@@ -22,7 +22,7 @@ public class RegisterService implements RequestService {
             throw new ErrorHandler("이미 존재하는 이메일입니다");
         }
 
-        databaseService.insertUser(new User(request.get("name"),request.get("id"), PasswordEncoder.hashPassword(request.get("pwd")),request.get("phone"),""));
+        databaseService.insertUser(new User(request.get("name"),request.get("id"), PasswordEncoder.hashPassword(request.get("pwd")),request.get("phone"), 0));
         return "";
     }
 }

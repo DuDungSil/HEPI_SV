@@ -36,7 +36,40 @@ public class FltController {
             return requestService.execute();
         } catch (Exception e) {
             e.printStackTrace();
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Item Not Found");
+            throw new ErrorHandler("오류가 발생했습니다");
+        }
+    }
+
+    @RequestMapping("/gymInfo")
+    public String gymInfo(@RequestBody HashMap<String, String> request) {
+        try {
+            requestService = new GymInfoService(request);
+            return requestService.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
+        }
+    }
+
+    @RequestMapping("/chatting")
+    public String chatting(@RequestBody HashMap<String, String> request) {
+        try {
+            requestService = new ChattingService(request);
+            return requestService.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
+        }
+    }
+
+    @RequestMapping("/myChat")
+    public String myChat(@RequestBody HashMap<String, String> request) {
+        try {
+            requestService = new MyChatService(request);
+            return requestService.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
         }
     }
 

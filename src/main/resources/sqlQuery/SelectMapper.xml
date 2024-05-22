@@ -8,9 +8,16 @@
              , ID
              , PWD
              , PHONE
-             , GYM
+             , GYM_ID
         FROM user
        WHERE ID = #{USER_ID, jdbcType=CHAR}
+    </select>
+
+    <select id="selectGym">
+        SELECT ID
+             , NAME
+        FROM gym
+        WHERE ID = (select GYM_ID from user where id = #{USER_ID, jdbcType=CHAR})
     </select>
 
     <select id="selectEventProduct">
@@ -58,6 +65,19 @@
         FROM product p, user_cart uc
         where uc.USER_ID = #{USER_ID, jdbcType=CHAR}
           and uc.PRODUCT_ID = p.ID;
+    </select>
+
+    <select id="selectChatting">
+        SELECT ch.`TIME`
+             , ch.GYM_ID
+             , ch.USER_ID
+             , u.NAME
+             , ch.MESSAGE
+        FROM chatting ch, user u
+        where ch.GYM_ID = #{GYM_ID, jdbcType=INTEGER}
+          and ch.USER_ID = u.ID
+    order by `TIME` desc
+        limit 20
     </select>
 
     <select id="selectEventImage">

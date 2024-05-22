@@ -8,13 +8,13 @@ public class User {
     private String id;
     private String pwd;
     private String phone;
-    private String gym;
+    private int gym_id;
 
-    public User(String name, String id, String pwd, String phone, String gym) {
+    public User(String name, String id, String pwd, String phone, int gym_id) {
         this.name = name;
         this.id = id;
         this.pwd = pwd;
         this.phone = phone;
-        this.gym = gym;
+        this.gym_id = gym_id;
     }
 }

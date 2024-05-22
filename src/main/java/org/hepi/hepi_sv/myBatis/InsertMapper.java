@@ -12,5 +12,6 @@ import java.util.List;
 public interface InsertMapper {
 
     void insertUser(@Param("user") User user);
+    void insertMyChat(@Param("user_id") String user_id, @Param("message") String message);
 
 }

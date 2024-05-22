@@ -3,9 +3,7 @@ package org.hepi.hepi_sv.service;
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
 import org.hepi.hepi_sv.myBatis.InsertMapper;
 import org.hepi.hepi_sv.myBatis.SelectMapper;
-import org.hepi.hepi_sv.vo.EventImage;
-import org.hepi.hepi_sv.vo.Product;
-import org.hepi.hepi_sv.vo.User;
+import org.hepi.hepi_sv.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +23,9 @@ public class DatabaseService {
         return selectMapper.selectUser(id);
     }
 
+    public Gym selectGym(String id) {
+        return selectMapper.selectGym(id);
+    }
     public List<EventImage> selectEventImage() {
         List<EventImage> list = new ArrayList<>();
         selectMapper.selectEventImage().forEach(e -> {
@@ -57,14 +58,30 @@ public class DatabaseService {
         return list;
     }
 
-    public List<Product> insertUser(User user) {
-        List<Product> list = new ArrayList<>();
+    public List<Chatting> selectChatting(String gym_id) {
+        List<Chatting> list = new ArrayList<>();
+        selectMapper.selectChatting(gym_id).forEach(e -> {
+            list.add(e);
+        });
+        return list;
+    }
+
+    public void insertUser(User user) {
         try {
             insertMapper.insertUser(user);
         } catch (Exception e) {
             e.printStackTrace();
             throw new ErrorHandler("오류가 발생했습니다");
         }
-        return list;
     }
+
+    public void insertMyChat(String user_id, String message) {
+        try {
+            insertMapper.insertMyChat(user_id, message);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
+        }
+    }
+
 }

@@ -13,8 +13,8 @@ public class LoginService implements RequestService {
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
     private HashMap<String, String> request;
 
-    public LoginService(HashMap<String, String> loginRequest) {
-        this.request = loginRequest;
+    public LoginService(HashMap<String, String> request) {
+        this.request = request;
     }
 
     @Override
