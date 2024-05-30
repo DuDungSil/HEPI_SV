@@ -84,4 +84,12 @@ public class DatabaseService {
         }
     }
 
+    public User checkPhone(String phone) {
+        try {
+            return selectMapper.checkPhone(phone);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new ErrorHandler("오류가 발생했습니다");
+        }
+    }
 }

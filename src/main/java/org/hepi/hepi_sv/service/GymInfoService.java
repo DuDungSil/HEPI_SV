@@ -7,10 +7,13 @@ import org.hepi.hepi_sv.util.ApplicationContextProvider;
 import org.hepi.hepi_sv.util.PasswordEncoder;
 import org.hepi.hepi_sv.vo.Gym;
 import org.hepi.hepi_sv.vo.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 
 public class GymInfoService implements RequestService {
+    private static final Logger logger = LoggerFactory.getLogger(GymInfoService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
     private HashMap<String, String> request;
 
@@ -24,13 +27,14 @@ public class GymInfoService implements RequestService {
 
         String userJson = "";
         try {
-            System.out.println(gym);
             ObjectMapper objectMapper = new ObjectMapper();
             userJson = objectMapper.writeValueAsString(gym);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            logger.error("[ERROR] | {}", e);
             throw new ErrorHandler("오류가 발생했습니다");
         }
+
+        logger.info("[헬스장 제공] {} 유저 헬스장 제공 완료 | {}", request.get("user_id"), gym.toString());
         return userJson;
     }
 }

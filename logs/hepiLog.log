@@ -1,0 +1,20 @@
+2024-05-30 18:33:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 20836 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-05-30 18:33:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-30 18:33:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-05-30 18:33:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-05-30 18:33:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-30 18:33:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-30 18:33:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-30 18:33:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1160 ms
+2024-05-30 18:33:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-05-30 18:33:31 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-05-30 18:33:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-05-30 18:33:31 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.717 seconds (process running for 3.301)
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4935c82a
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료

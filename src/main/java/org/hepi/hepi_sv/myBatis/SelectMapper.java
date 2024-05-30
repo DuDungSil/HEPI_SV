@@ -17,4 +17,5 @@ public interface SelectMapper {
     public List<Chatting> selectChatting(String GYM_ID);
     public List<EventImage> selectEventImage();
 
+    public User checkPhone(String PHONE);
 }

@@ -85,6 +85,12 @@
              , URL
         FROM event_image
     </select>
+
+    <select id="checkPhone">
+        SELECT *
+        FROM user
+       WHERE PHONE = #{PHONE}
+    </select>
     
 </mapper>
 

@@ -17,4 +17,12 @@ public class User {
         this.phone = phone;
         this.gym_id = gym_id;
     }
+
+    @Override
+    public String toString() {
+        return "NAME : " + this.name
+             + ", ID : " + this.id
+             + ", PHONE : " + this.phone
+             + ", GYM_ID : " + this.gym_id;
+    }
 }

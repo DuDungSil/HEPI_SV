@@ -31,57 +31,38 @@ public class FltController {
 
     @RequestMapping("/eventImage")
     public String eventImage() {
-        try {
-            requestService = new EventImageService();
-            return requestService.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ErrorHandler("오류가 발생했습니다");
-        }
+        requestService = new EventImageService();
+        return requestService.execute();
     }
 
     @RequestMapping("/gymInfo")
     public String gymInfo(@RequestBody HashMap<String, String> request) {
-        try {
-            requestService = new GymInfoService(request);
-            return requestService.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ErrorHandler("오류가 발생했습니다");
-        }
+        requestService = new GymInfoService(request);
+        return requestService.execute();
     }
 
     @RequestMapping("/chatting")
     public String chatting(@RequestBody HashMap<String, String> request) {
-        try {
-            requestService = new ChattingService(request);
-            return requestService.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ErrorHandler("오류가 발생했습니다");
-        }
+        requestService = new ChattingService(request);
+        return requestService.execute();
     }
 
     @RequestMapping("/myChat")
     public String myChat(@RequestBody HashMap<String, String> request) {
-        try {
-            requestService = new MyChatService(request);
-            return requestService.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ErrorHandler("오류가 발생했습니다");
-        }
+        requestService = new MyChatService(request);
+        return requestService.execute();
     }
 
     @RequestMapping("/product/{type}")
     public String product(@PathVariable String type, @RequestBody HashMap<String, String> request) {
-        try {
-            requestService = new ProductService(type, request);
-            return requestService.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Item Not Found");
-        }
+        requestService = new ProductService(type, request);
+        return requestService.execute();
+    }
+
+    @RequestMapping("/smsAuth")
+    public String smsAuth(@RequestBody HashMap<String, String> request) {
+        requestService = new SmsService(request);
+        return requestService.execute();
     }
 
     @ExceptionHandler(ErrorHandler.class)
