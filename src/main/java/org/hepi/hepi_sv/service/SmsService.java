@@ -2,6 +2,7 @@ package org.hepi.hepi_sv.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.http.HttpServletRequest;
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
 import org.hepi.hepi_sv.util.ApplicationContextProvider;
 import org.hepi.hepi_sv.util.SmsUtil;
@@ -14,18 +15,18 @@ import java.util.Random;
 public class SmsService implements RequestService {
     private static final Logger logger = LoggerFactory.getLogger(SmsService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
-    private HashMap<String, String> request;
+    private HttpServletRequest request;
 
-    public SmsService(HashMap<String, String> request) {
+    public SmsService(HttpServletRequest request) {
         this.request = request;
     }
 
     @Override
     public String execute() {
-        String phone = request.get("phone");
+        String phone = request.getParameter("phone");
 
         if (databaseService.checkPhone(phone) != null) {
-            logger.info("[문자인증] 존재하는 핸드폰 번호 | {}", phone);
+            logger.info("[Sms] ALREADY EXIST PHONE NUMBER | {}", phone);
             throw new ErrorHandler("이미 가입되어 있는 핸드폰 번호입니다");
         }
 
@@ -35,9 +36,9 @@ public class SmsService implements RequestService {
 
             String userJson = "";
             ObjectMapper objectMapper = new ObjectMapper();
-            userJson = objectMapper.writeValueAsString(authCode);
+            userJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(authCode);
 
-            logger.info("[문자인증] 인증번호 전송완료 | {}", authCode);
+            request.setAttribute("content", userJson);
             return userJson;
         } catch (Exception e) {
             logger.error("[ERROR] | {}", e);

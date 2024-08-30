@@ -26,8 +26,7 @@
         </encoder>
     </appender>
 
-    <!-- 루트 로거 설정 -->
-    <root level="info">
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>

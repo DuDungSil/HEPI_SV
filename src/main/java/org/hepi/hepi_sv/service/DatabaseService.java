@@ -58,26 +58,9 @@ public class DatabaseService {
         return list;
     }
 
-    public List<Chatting> selectChatting(String gym_id) {
-        List<Chatting> list = new ArrayList<>();
-        selectMapper.selectChatting(gym_id).forEach(e -> {
-            list.add(e);
-        });
-        return list;
-    }
-
     public void insertUser(User user) {
         try {
             insertMapper.insertUser(user);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new ErrorHandler("오류가 발생했습니다");
-        }
-    }
-
-    public void insertMyChat(String user_id, String message) {
-        try {
-            insertMapper.insertMyChat(user_id, message);
         } catch (Exception e) {
             e.printStackTrace();
             throw new ErrorHandler("오류가 발생했습니다");

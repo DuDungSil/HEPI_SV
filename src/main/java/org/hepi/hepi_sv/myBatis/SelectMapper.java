@@ -14,8 +14,6 @@ public interface SelectMapper {
     public List<Product> selectEventProduct();
     public List<Product> selectMyProduct(String USER_ID);
     public List<Product> selectCartProduct(String USER_ID);
-    public List<Chatting> selectChatting(String GYM_ID);
     public List<EventImage> selectEventImage();
-
     public User checkPhone(String PHONE);
 }

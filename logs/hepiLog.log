@@ -1,20 +1,1301 @@
-2024-05-30 18:33:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 20836 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
-2024-05-30 18:33:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
-2024-05-30 18:33:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
-2024-05-30 18:33:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
-2024-05-30 18:33:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-05-30 18:33:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-30 18:33:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-05-30 18:33:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1160 ms
-2024-05-30 18:33:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
-2024-05-30 18:33:31 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
-2024-05-30 18:33:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
-2024-05-30 18:33:31 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.717 seconds (process running for 3.301)
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4935c82a
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
-2024-05-30 18:35:11 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 13:46:37 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 13368 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 13:46:37 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 13:46:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 13:46:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:46:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 13:46:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 13:46:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 13:46:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1773 ms
+2024-08-30 13:46:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:46:40 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 13:46:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 13:46:40 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 3.564 seconds (process running for 4.369)
+2024-08-30 13:46:40 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 13:53:47 [https-jsse-nio-3573-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 13:53:47 [https-jsse-nio-3573-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 13:53:47 [https-jsse-nio-3573-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-30 13:53:47 [https-jsse-nio-3573-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-30 13:53:47 [https-jsse-nio-3573-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 13:53:48 [https-jsse-nio-3573-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d37708
+2024-08-30 13:53:48 [https-jsse-nio-3573-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 13:53:48 [https-jsse-nio-3573-exec-8] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 13:54:20 [https-jsse-nio-3573-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest] with root cause
+java.lang.IllegalStateException: No primary or single unique constructor found for interface javax.servlet.http.HttpServletRequest
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-30 13:54:20 [https-jsse-nio-3573-exec-1] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 13:56:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 13:56:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 13:56:23 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 21244 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 13:56:23 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 13:56:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 13:56:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:56:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 13:56:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 13:56:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 13:56:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1793 ms
+2024-08-30 13:56:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:56:26 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 13:56:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 13:56:26 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 3.653 seconds (process running for 4.578)
+2024-08-30 13:56:26 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-6] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cd4a9a2
+2024-08-30 13:56:30 [https-jsse-nio-3573-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 13:56:31 [https-jsse-nio-3573-exec-6] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 13:56:31 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 13:56:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 13:56:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 13:57:01 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 23736 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 13:57:01 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 13:57:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 13:57:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:57:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 13:57:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 13:57:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 13:57:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1125 ms
+2024-08-30 13:57:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 13:57:03 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 13:57:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 13:57:03 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.533 seconds (process running for 2.954)
+2024-08-30 13:57:03 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bc2b4bb
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 13:57:05 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 14:29:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 14:29:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 14:29:20 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 6172 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 14:29:20 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 14:29:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 14:29:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 14:29:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 14:29:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 14:29:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 14:29:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+2024-08-30 14:29:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 14:29:22 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 14:29:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 14:29:22 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.615 seconds (process running for 3.045)
+2024-08-30 14:29:22 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 14:30:33 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 14:30:33 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 14:30:33 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 14:30:34 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 14:30:34 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70c5fbd8
+2024-08-30 14:30:34 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 14:30:34 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 14:30:34 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 14:32:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 14:32:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 14:33:02 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 8876 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 14:33:02 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 14:33:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 14:33:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 14:33:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 14:33:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 14:33:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 14:33:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 958 ms
+2024-08-30 14:33:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 14:33:04 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 14:33:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 14:33:04 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.367 seconds (process running for 3.005)
+2024-08-30 14:33:04 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10246a58
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 14:33:08 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:16:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 15:16:13 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 15:20:43 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 24636 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 15:20:43 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 15:20:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 15:20:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:20:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 15:20:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 15:20:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 15:20:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 770 ms
+2024-08-30 15:20:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:20:44 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 15:20:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 15:20:44 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 1.684 seconds (process running for 2.071)
+2024-08-30 15:20:44 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:62834
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:62835
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Request URL: https://10.0.2.2:3573/flt/eventImage
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Request URL: https://10.0.2.2:3573/flt/product/event
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - HTTP Method: POST
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - HTTP Method: POST
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 15:26:55 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 15:26:56 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a8ba25
+2024-08-30 15:26:56 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 15:26:56 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 15:26:56 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:36:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 15:36:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 15:36:30 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 10484 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 15:36:30 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 15:36:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 15:36:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:36:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 15:36:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 15:36:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 15:36:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2024-08-30 15:36:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:36:33 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 15:36:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 15:36:33 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 3.07 seconds (process running for 3.642)
+2024-08-30 15:36:33 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:63677
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:63678
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Request URL: https://10.0.2.2:3573/flt/eventImage
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Request URL: https://10.0.2.2:3573/flt/product/event
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - HTTP Method: POST
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - HTTP Method: POST
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b07fe49
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Response Status: 200
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Response Status: 200
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Response Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 06:36:38 GMT
+
+2024-08-30 15:36:38 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Response Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2188
+Date: Fri, 30 Aug 2024 06:36:38 GMT
+
+2024-08-30 15:39:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 15:39:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 15:39:47 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 2408 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 15:39:47 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 15:39:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 15:39:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:39:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 15:39:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 15:39:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 15:39:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 918 ms
+2024-08-30 15:39:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:39:49 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 15:39:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 15:39:49 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.263 seconds (process running for 2.683)
+2024-08-30 15:39:49 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:63863 | Request URL: https://10.0.2.2:3573/flt/product/event | HTTP Method: POST | Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Client IP: 127.0.0.1:63864 | Request URL: https://10.0.2.2:3573/flt/eventImage | HTTP Method: POST | Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d1234b5
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Response Status: 200
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Response Status: 200
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - Response Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2188
+Date: Fri, 30 Aug 2024 06:39:55 GMT
+
+2024-08-30 15:39:55 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - Response Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 06:39:55 GMT
+
+2024-08-30 15:50:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 15:50:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 15:50:24 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 23892 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 15:50:24 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 15:50:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 15:50:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:50:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 15:50:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 15:50:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 15:50:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 816 ms
+2024-08-30 15:50:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:50:26 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 15:50:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 15:50:26 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.071 seconds (process running for 2.52)
+2024-08-30 15:50:26 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64438 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64439 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+Headers: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@692ccd69
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2188
+Date: Fri, 30 Aug 2024 06:50:35 GMT
+
+2024-08-30 15:50:35 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+Headers: 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 06:50:35 GMT
+
+2024-08-30 15:57:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 15:57:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 15:57:04 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 2012 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 15:57:04 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 15:57:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 15:57:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:57:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 15:57:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 15:57:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 15:57:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1215 ms
+2024-08-30 15:57:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 15:57:06 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 15:57:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 15:57:06 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.649 seconds (process running for 3.227)
+2024-08-30 15:57:06 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64819 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64818 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 15:57:39 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bb34b7a
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-10] ERROR o.s.w.servlet.HandlerExecutionChain - HandlerInterceptor.afterCompletion threw exception
+java.lang.ClassCastException: class org.apache.catalina.connector.ResponseFacade cannot be cast to class org.hepi.hepi_sv.controller.FltInterceptor$ContentCachingResponseWrapper (org.apache.catalina.connector.ResponseFacade and org.hepi.hepi_sv.controller.FltInterceptor$ContentCachingResponseWrapper are in unnamed module of loader 'app')
+	at org.hepi.hepi_sv.controller.FltInterceptor.afterCompletion(FltInterceptor.java:46)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:176)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1185)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-30 15:57:40 [https-jsse-nio-3573-exec-9] ERROR o.s.w.servlet.HandlerExecutionChain - HandlerInterceptor.afterCompletion threw exception
+java.lang.ClassCastException: class org.apache.catalina.connector.ResponseFacade cannot be cast to class org.hepi.hepi_sv.controller.FltInterceptor$ContentCachingResponseWrapper (org.apache.catalina.connector.ResponseFacade and org.hepi.hepi_sv.controller.FltInterceptor$ContentCachingResponseWrapper are in unnamed module of loader 'app')
+	at org.hepi.hepi_sv.controller.FltInterceptor.afterCompletion(FltInterceptor.java:46)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:176)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1185)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-30 16:00:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:00:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:00:12 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 19508 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:00:12 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:00:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:00:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:00:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:00:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:00:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:00:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 821 ms
+2024-08-30 16:00:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:00:14 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:00:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:00:14 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 1.81 seconds (process running for 2.232)
+2024-08-30 16:00:14 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64971 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:64970 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55199581
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:00:17 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:03 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65024 
+Request URL: https://10.0.2.2:3573/flt/login 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 48
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:03 [https-jsse-nio-3573-exec-7] INFO  o.hepi.hepi_sv.service.LoginService - [로그인] 완료 | NAME : LEE MIN HYEOK, ID : lmhfox3573@naver.com, PHONE : 01043493572, GYM_ID : 0
+2024-08-30 16:01:03 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 48
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65025 
+Request URL: https://10.0.2.2:3573/flt/gymInfo 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 34
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65026 
+Request URL: https://10.0.2.2:3573/flt/product/mine 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-8] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65027 
+Request URL: https://10.0.2.2:3573/flt/product/cart 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65029 
+Request URL: https://10.0.2.2:3573/flt/product/cart 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-1] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65028 
+Request URL: https://10.0.2.2:3573/flt/product/mine 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-7] INFO  o.h.hepi_sv.service.ProductService - [상품] 'mine' 상품리스트 제공 완료 | lmhfox3573@naver.com
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'cart' 상품리스트 제공 완료 | lmhfox3573@naver.com
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-8] INFO  o.h.hepi_sv.service.ProductService - [상품] 'cart' 상품리스트 제공 완료 | lmhfox3573@naver.com
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-8] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.GymInfoService - [헬스장 제공] lmhfox3573@naver.com 유저 헬스장 제공 완료 | ID : 0, NAME : "dd"
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 34
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-1] INFO  o.h.hepi_sv.service.ProductService - [상품] 'mine' 상품리스트 제공 완료 | lmhfox3573@naver.com
+2024-08-30 16:01:04 [https-jsse-nio-3573-exec-1] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+ 
+[Content]: 
+
+2024-08-30 16:06:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:06:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:06:32 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 23420 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:06:32 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:06:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:06:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:06:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:06:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:06:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:06:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2024-08-30 16:06:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:06:34 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:06:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:06:35 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.799 seconds (process running for 3.31)
+2024-08-30 16:06:35 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65340 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65339 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4dfce6e6
+2024-08-30 16:07:11 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:07:12 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 16:07:12 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | 
+2024-08-30 16:07:12 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:65340
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 07:07:12 GMT
+
+2024-08-30 16:07:12 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:65339
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2188
+Date: Fri, 30 Aug 2024 07:07:12 GMT
+
+2024-08-30 16:09:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:09:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:09:27 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 25288 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:09:27 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:09:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:09:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:09:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:09:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:09:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:09:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+2024-08-30 16:09:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:09:28 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:09:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:09:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.098 seconds (process running for 2.502)
+2024-08-30 16:09:28 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65485 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:65484 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@603a9a4a
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-10] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | [{"id":1,"name":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","price":40101,"explain":"California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)","event":1,"main_image":"https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7","my_amount":-1,"amount":454,"unit":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","discount":20},{"id":2,"name":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","price":21502,"explain":"(상품설명)","event":1,"main_image":"https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s","my_amount":-1,"amount":300,"unit":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","discount":30},{"id":3,"name":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","price":122556,"explain":"(상품설명)","event":1,"main_image":"https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl","my_amount":-1,"amount":2270,"unit":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","discount":40},{"id":5,"name":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","price":33000,"explain":"(상품설명)","event":1,"main_image":"https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF","my_amount":-1,"amount":60,"unit":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","discount":10},{"id":6,"name":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","price":15000,"explain":"(상품설명)","event":1,"main_image":"https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p","my_amount":-1,"amount":100,"unit":"'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">","discount":50}]
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:65484
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2188
+Date: Fri, 30 Aug 2024 07:09:33 GMT
+
+2024-08-30 16:09:33 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:65485
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 07:09:33 GMT
+
+2024-08-30 16:11:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:11:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:11:14 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 12360 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:11:14 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:11:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:11:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:11:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:11:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:11:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:11:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 760 ms
+2024-08-30 16:11:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:11:15 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:11:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:11:15 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 1.946 seconds (process running for 2.352)
+2024-08-30 16:11:15 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:49211 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:49210 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b442d50
+2024-08-30 16:11:18 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:11:19 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 16:11:19 [https-jsse-nio-3573-exec-9] INFO  o.h.hepi_sv.service.ProductService - [상품] 'event' 상품리스트 제공 완료 | [ {
+  "id" : 1,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 40101,
+  "explain" : "California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7",
+  "my_amount" : -1,
+  "amount" : 454,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 20
+}, {
+  "id" : 2,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 21502,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s",
+  "my_amount" : -1,
+  "amount" : 300,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 30
+}, {
+  "id" : 3,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 122556,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl",
+  "my_amount" : -1,
+  "amount" : 2270,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 40
+}, {
+  "id" : 5,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 33000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF",
+  "my_amount" : -1,
+  "amount" : 60,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 10
+}, {
+  "id" : 6,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 15000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p",
+  "my_amount" : -1,
+  "amount" : 100,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 50
+} ]
+2024-08-30 16:11:19 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:49211
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 07:11:19 GMT
+
+2024-08-30 16:11:19 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:49210
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2504
+Date: Fri, 30 Aug 2024 07:11:19 GMT
+
+2024-08-30 16:23:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:23:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:25:17 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 23356 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:25:17 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:25:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:25:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:25:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:25:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:25:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:25:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+2024-08-30 16:25:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:25:18 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:25:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:25:18 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.288 seconds (process running for 2.706)
+2024-08-30 16:25:18 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:50271 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:50270 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34868aeb
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.h.h.service.EventImageService - [이벤트 이미지] 제공 완료
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:50271
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 283
+Date: Fri, 30 Aug 2024 07:25:22 GMT
+ 
+[Content]: 
+null
+2024-08-30 16:25:22 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:50270
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2504
+Date: Fri, 30 Aug 2024 07:25:22 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 40101,
+  "explain" : "California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7",
+  "my_amount" : -1,
+  "amount" : 454,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 20
+}, {
+  "id" : 2,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 21502,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s",
+  "my_amount" : -1,
+  "amount" : 300,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 30
+}, {
+  "id" : 3,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 122556,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl",
+  "my_amount" : -1,
+  "amount" : 2270,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 40
+}, {
+  "id" : 5,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 33000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF",
+  "my_amount" : -1,
+  "amount" : 60,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 10
+}, {
+  "id" : 6,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 15000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p",
+  "my_amount" : -1,
+  "amount" : 100,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 50
+} ]
+2024-08-30 16:40:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:40:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-30 16:41:07 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication using Java 17.0.11 with PID 17416 (C:\Workspace_Lm\HEPI_SV\target\classes started by PC in C:\Workspace_Lm\HEPI_SV)
+2024-08-30 16:41:07 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 16:41:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 16:41:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:41:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 16:41:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 16:41:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 16:41:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1218 ms
+2024-08-30 16:41:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 16:41:09 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\PC\.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 16:41:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 16:41:10 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 2.694 seconds (process running for 3.23)
+2024-08-30 16:41:10 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-8] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:51118 
+Request URL: https://10.0.2.2:3573/flt/product/cart 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:51117 
+Request URL: https://10.0.2.2:3573/flt/product/mine 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 29
+host: 10.0.2.2:3573
+
+2024-08-30 16:41:29 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 16:41:30 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ea4e76d
+2024-08-30 16:41:30 [https-jsse-nio-3573-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 16:41:30 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:51117
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 3
+Date: Fri, 30 Aug 2024 07:41:30 GMT
+ 
+[Content]: 
+[ ]
+
+2024-08-30 16:41:30 [https-jsse-nio-3573-exec-8] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:51118
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 3
+Date: Fri, 30 Aug 2024 07:41:30 GMT
+ 
+[Content]: 
+[ ]
+
+2024-08-30 16:42:02 [https-jsse-nio-3573-exec-2] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:51155 
+Request URL: https://10.0.2.2:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 10.0.2.2:3573
+
+2024-08-30 16:42:02 [https-jsse-nio-3573-exec-5] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 127.0.0.1:51156 
+Request URL: https://10.0.2.2:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 10.0.2.2:3573
+
+2024-08-30 16:42:02 [https-jsse-nio-3573-exec-5] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:51156
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 329
+Date: Fri, 30 Aug 2024 07:42:02 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "url" : "https://drive.google.com/uc?export=view&id=1XbPY753nb7WlGYnU7mGUYGI4fCtNMX1Q"
+}, {
+  "id" : 2,
+  "url" : "https://drive.google.com/uc?export=view&id=1Sq4liCGQqv4yyc9FxOyJC4ybczVLCSHK"
+}, {
+  "id" : 3,
+  "url" : "https://drive.google.com/uc?export=view&id=1C6z-Dcxm5HkknxQiVyAQ859vaHZmMjBU"
+} ]
+
+2024-08-30 16:42:02 [https-jsse-nio-3573-exec-2] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 127.0.0.1:51155
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2504
+Date: Fri, 30 Aug 2024 07:42:02 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 40101,
+  "explain" : "California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7",
+  "my_amount" : -1,
+  "amount" : 454,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 20
+}, {
+  "id" : 2,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 21502,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s",
+  "my_amount" : -1,
+  "amount" : 300,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 30
+}, {
+  "id" : 3,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 122556,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl",
+  "my_amount" : -1,
+  "amount" : 2270,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 40
+}, {
+  "id" : 5,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 33000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF",
+  "my_amount" : -1,
+  "amount" : 60,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 10
+}, {
+  "id" : 6,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 15000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p",
+  "my_amount" : -1,
+  "amount" : 100,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 50
+} ]
+
+2024-08-30 16:42:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-30 16:42:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
