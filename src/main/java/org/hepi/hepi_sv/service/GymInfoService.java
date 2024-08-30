@@ -16,15 +16,18 @@ import java.util.HashMap;
 public class GymInfoService implements RequestService {
     private static final Logger logger = LoggerFactory.getLogger(GymInfoService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
-    private HttpServletRequest request;
 
-    public GymInfoService(HttpServletRequest request) {
+    HashMap<String, String> request;
+    private HttpServletRequest httpRequest;
+
+    public GymInfoService(HashMap<String, String> request, HttpServletRequest httpRequest) {
         this.request = request;
+        this.httpRequest = httpRequest;
     }
 
     @Override
     public String execute() {
-        Gym gym = databaseService.selectGym(request.getParameter("user_id"));
+        Gym gym = databaseService.selectGym(request.get("user_id"));
 
         String userJson = "";
         try {
@@ -35,7 +38,7 @@ public class GymInfoService implements RequestService {
             throw new ErrorHandler("오류가 발생했습니다");
         }
 
-        request.setAttribute("content", userJson);
+        httpRequest.setAttribute("content", userJson);
         return userJson;
     }
 }

@@ -15,15 +15,18 @@ import java.util.Random;
 public class SmsService implements RequestService {
     private static final Logger logger = LoggerFactory.getLogger(SmsService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
-    private HttpServletRequest request;
 
-    public SmsService(HttpServletRequest request) {
+    HashMap<String, String> request;
+    private HttpServletRequest httpRequest;
+
+    public SmsService(HashMap<String, String> request, HttpServletRequest httpRequest) {
         this.request = request;
+        this.httpRequest = httpRequest;
     }
 
     @Override
     public String execute() {
-        String phone = request.getParameter("phone");
+        String phone = request.get("phone");
 
         if (databaseService.checkPhone(phone) != null) {
             logger.info("[Sms] ALREADY EXIST PHONE NUMBER | {}", phone);
@@ -38,7 +41,7 @@ public class SmsService implements RequestService {
             ObjectMapper objectMapper = new ObjectMapper();
             userJson = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(authCode);
 
-            request.setAttribute("content", userJson);
+            httpRequest.setAttribute("content", userJson);
             return userJson;
         } catch (Exception e) {
             logger.error("[ERROR] | {}", e);

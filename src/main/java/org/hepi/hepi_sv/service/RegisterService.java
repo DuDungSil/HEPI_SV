@@ -13,25 +13,28 @@ import java.util.HashMap;
 public class RegisterService implements RequestService {
     private static final Logger logger = LoggerFactory.getLogger(RegisterService.class);
     DatabaseService databaseService = (DatabaseService) ApplicationContextProvider.getBean("databaseService");
-    private HttpServletRequest request;
 
-    public RegisterService(HttpServletRequest request) {
+    HashMap<String, String> request;
+    private HttpServletRequest httpRequest;
+
+    public RegisterService(HashMap<String, String> request, HttpServletRequest httpRequest) {
         this.request = request;
+        this.httpRequest = httpRequest;
     }
 
     @Override
     public String execute() {
 
-        if(databaseService.selectUser(request.getParameter("id")) != null) {
-            logger.error("[Register] ALREADY EXIST E-MAIL | {}", request.getParameter("id"));
+        if(databaseService.selectUser(request.get("id")) != null) {
+            logger.error("[Register] ALREADY EXIST E-MAIL | {}", request.get("id"));
             throw new ErrorHandler("이미 존재하는 이메일입니다");
         }
 
-        User user = new User(request.getParameter("name"),request.getParameter("id"), PasswordEncoder.hashPassword(request.getParameter("pwd")),request.getParameter("phone"), 0);
+        User user = new User(request.get("name"),request.get("id"), PasswordEncoder.hashPassword(request.get("pwd")),request.get("phone"), 0);
         databaseService.insertUser(user);
 
         logger.info("[DATABASE] COMPLETE REGISTRATION | {}", user.toString());
-        request.setAttribute("content", "");
+        httpRequest.setAttribute("content", "");
         return "";
     }
 }

@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+
 @RestController
 @RequestMapping("/flt")
 public class FltController {
@@ -15,38 +17,38 @@ public class FltController {
     RequestService requestService;
 
     @RequestMapping("/register")
-    public String register(HttpServletRequest request) {
-        requestService = new RegisterService(request);
+    public String register(@RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+        requestService = new RegisterService(request, httpRequest);
         return requestService.execute();
     }
 
     @RequestMapping("/login")
-    public String login(HttpServletRequest request) {
-        requestService = new LoginService(request);
+    public String login(@RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+        requestService = new LoginService(request, httpRequest);
         return requestService.execute();
     }
 
     @RequestMapping("/eventImage")
-    public String eventImage(HttpServletRequest request) {
-        requestService = new EventImageService(request);
+    public String eventImage(HttpServletRequest httpRequest) {
+        requestService = new EventImageService(httpRequest);
         return requestService.execute();
     }
 
     @RequestMapping("/gymInfo")
-    public String gymInfo(HttpServletRequest request) {
-        requestService = new GymInfoService(request);
+    public String gymInfo(@RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+        requestService = new GymInfoService(request, httpRequest);
         return requestService.execute();
     }
 
     @RequestMapping("/product/{type}")
-    public String product(@PathVariable String type, HttpServletRequest request) {
-        requestService = new ProductService(type, request);
+    public String product(@PathVariable String type, @RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+        requestService = new ProductService(type, request, httpRequest);;
         return requestService.execute();
     }
 
     @RequestMapping("/smsAuth")
-    public String smsAuth(HttpServletRequest request) {
-        requestService = new SmsService(request);
+    public String smsAuth(@RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+        requestService = new SmsService(request, httpRequest);
         return requestService.execute();
     }
 
