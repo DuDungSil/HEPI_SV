@@ -1,4 +1,4 @@
-package org.hepi.hepi_sv.vo;
+package org.hepi.hepi_sv.model.dto.Nutrient;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import lombok.Data;
 
 @Data
 public class NutrientResult {
-    private double BMI;
+    private String BMI;
     private double BMR;
     private double TDEE;
-    private NutrientComposition profile;
+    private NutrientComposition composition;
     private List<String> mealTimes;
 }
 

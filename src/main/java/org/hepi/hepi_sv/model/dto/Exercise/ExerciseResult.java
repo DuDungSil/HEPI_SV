@@ -1,4 +1,4 @@
-package org.hepi.hepi_sv.vo;
+package org.hepi.hepi_sv.model.dto.Exercise;
 
 import lombok.Data;
 

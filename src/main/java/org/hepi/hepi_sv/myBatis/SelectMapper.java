@@ -1,7 +1,7 @@
 package org.hepi.hepi_sv.myBatis;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.hepi.hepi_sv.vo.*;
+import org.hepi.hepi_sv.model.vo.*;
 
 import java.util.List;
 import java.util.Map;

@@ -3,8 +3,8 @@ package org.hepi.hepi_sv.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
+import org.hepi.hepi_sv.model.vo.EventImage;
 import org.hepi.hepi_sv.util.ApplicationContextProvider;
-import org.hepi.hepi_sv.vo.EventImage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,15 +1,16 @@
 package org.hepi.hepi_sv.controller;
 
-import java.util.HashMap;
-
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
 import org.hepi.hepi_sv.errorHandler.ErrorResponse;
+import org.hepi.hepi_sv.model.dto.Exercise.ExerciseRequest;
+import org.hepi.hepi_sv.model.dto.Nutrient.NutrientRequest;
+import org.hepi.hepi_sv.service.ExerciseService;
 import org.hepi.hepi_sv.service.NutrientService;
 import org.hepi.hepi_sv.service.RequestService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,9 +24,15 @@ public class WebController {
 
     RequestService requestService;
 
-    @GetMapping("/calory")
-    public String calory(@RequestBody HashMap<String, String> request, HttpServletRequest httpRequest) {
+    @PostMapping("/nutrient")
+    public String nutrient(@RequestBody NutrientRequest request, HttpServletRequest httpRequest) {
         requestService = new NutrientService(request, httpRequest);
+        return requestService.execute();
+    }
+
+    @PostMapping("/exercise")
+    public String exercise(@RequestBody ExerciseRequest request, HttpServletRequest httpRequest) {
+        requestService = new ExerciseService(request, httpRequest);
         return requestService.execute();
     }
 

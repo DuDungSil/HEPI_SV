@@ -2,9 +2,9 @@ package org.hepi.hepi_sv.service;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
+import org.hepi.hepi_sv.model.vo.User;
 import org.hepi.hepi_sv.util.ApplicationContextProvider;
 import org.hepi.hepi_sv.util.PasswordEncoder;
-import org.hepi.hepi_sv.vo.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package org.hepi.hepi_sv.vo;
+package org.hepi.hepi_sv.model.dto.Nutrient;
 
 import lombok.Data;
 
@@ -7,5 +7,4 @@ public class NutrientProfile {
     int ratio;
     int calory;
     int gram;
-
 }

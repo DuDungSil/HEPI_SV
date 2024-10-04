@@ -4,10 +4,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import org.hepi.hepi_sv.errorHandler.ErrorHandler;
+import org.hepi.hepi_sv.model.vo.Gym;
+import org.hepi.hepi_sv.model.vo.User;
 import org.hepi.hepi_sv.util.ApplicationContextProvider;
 import org.hepi.hepi_sv.util.PasswordEncoder;
-import org.hepi.hepi_sv.vo.Gym;
-import org.hepi.hepi_sv.vo.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
