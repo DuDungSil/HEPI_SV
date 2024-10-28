@@ -4,12 +4,12 @@ import lombok.Data;
 
 @Data
 public class NutrientComposition {
-    NutrientProfile carbohydrate;
-    NutrientProfile protein;
-    NutrientProfile unFat;
-    NutrientProfile satFat;
+    NutrientInfo carbohydrate;
+    NutrientInfo protein;
+    NutrientInfo unFat;
+    NutrientInfo satFat;
 
-    public NutrientComposition(NutrientProfile carbohydrate_, NutrientProfile protein_, NutrientProfile unFat_ , NutrientProfile satFat_){
+    public NutrientComposition(NutrientInfo carbohydrate_, NutrientInfo protein_, NutrientInfo unFat_ , NutrientInfo satFat_){
         this.carbohydrate = carbohydrate_;
         this.protein = protein_;
         this.unFat = unFat_;

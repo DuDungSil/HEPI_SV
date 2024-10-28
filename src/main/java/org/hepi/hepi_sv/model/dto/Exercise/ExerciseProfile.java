@@ -4,8 +4,9 @@ import lombok.Data;
 
 @Data
 public class ExerciseProfile {
-    double score;
+    String part;      // 운동 부위
+    int score;
     String level;
-    double strength;  // 1RM or Max Reps
-    double average;
+    int strength;  // 1RM or Max Reps
+    int average;
 }

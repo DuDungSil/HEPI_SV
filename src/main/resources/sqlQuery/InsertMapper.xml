@@ -20,5 +20,67 @@
                 #{message})
     </insert>
 
+    <!-- 웹 유저 데이터 수집 -->
+
+    <insert id="insertNutriRequest" useGeneratedKeys="true" keyProperty="request.id" keyColumn="DATA_ID">
+        INSERT INTO WEB_NUTRI_INPUT_DATA(GENDER, AGE, HEIGHT, WEIGHT, SLEEP, WAKEUP, PA, DIET_GOAL, DIET_TYPE, RECORD_AT)
+        VALUES (#{request.sex},
+                #{request.age},
+                #{request.height},
+                #{request.weight},
+                #{request.sleep},
+                #{request.wakeup},
+                #{request.PA},
+                #{request.dietGoal},
+                #{request.dietType},
+                now())
+    </insert>
+
+    <insert id="insertNutriResult">
+        INSERT INTO WEB_NUTRI_ANALYSIS_DATA(DATA_ID, BMI, BMR, TDEE, TARGET_CALORY)
+        VALUES (#{id, jdbcType=INTEGER},
+                #{result.BMI},
+                #{result.BMR},
+                #{result.TDEE},
+                #{result.targetCalory})
+    </insert>
+
+    <insert id="insertExerRequest" useGeneratedKeys="true" keyProperty="request.id" keyColumn="DATA_ID">
+        INSERT INTO WEB_EXER_INPUT_DATA(GENDER, AGE, HEIGHT, WEIGHT, BENCH_WEIGHT, BENCH_REPS, SQUAT_WEIGHT, SQUAT_REPS, DEAD_WEIGHT, DEAD_REPS, OVERHEAD_WEIGHT, OVERHEAD_REPS, PUSHUP_REPS, PULLUP_REPS, EXER_PURPOSES, RECORD_AT)
+        VALUES (#{request.sex},
+                #{request.age},
+                #{request.height},
+                #{request.weight},
+                #{request.bench.weight},
+                #{request.bench.reps},
+                #{request.squat.weight},
+                #{request.squat.reps},
+                #{request.dead.weight},
+                #{request.dead.reps},
+                #{request.overhead.weight},
+                #{request.overhead.reps},
+                #{request.pushup.reps},
+                #{request.pullup.reps},
+                #{request.supplePurpose, typeHandler=org.hepi.hepi_sv.myBatis.JsonTypeHandler},
+                now())
+    </insert>
+
+    <insert id="insertExerResult">
+        INSERT INTO WEB_EXER_ANALYSIS_DATA(DATA_ID, TOTAL_SCORE, BIG_THREE, BENCH_SCORE, BENCH_1RM, SQUAT_SCORE, SQUAT_1RM, DEAD_SCORE, DEAD_1RM, OVERHEAD_SCORE, OVERHEAD_1RM, PUSHUP_SCORE, PULLUP_SCORE)
+        VALUES (#{id, jdbcType=INTEGER},
+                #{result.totalScore},
+                #{result.bigThree},
+                #{result.ability.bench.score},
+                #{result.ability.bench.strength},
+                #{result.ability.squat.score},
+                #{result.ability.squat.strength},
+                #{result.ability.dead.score},
+                #{result.ability.dead.strength},
+                #{result.ability.overhead.score},
+                #{result.ability.overhead.strength},
+                #{result.ability.pushup.score},
+                #{result.ability.pullup.score})
+    </insert>
+
 </mapper>
 
