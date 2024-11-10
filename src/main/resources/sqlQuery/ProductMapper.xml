@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hepi.hepi_sv.product.repository.mybatis.ProductMapper">
+
+    <select id="selectFoodsByNutrientTypeAndDietType">
+        SELECT t2.PRODUCT_ID
+               , t2.NAME
+               , t2.URL
+               , t2.IMG_URL
+               , t2.BRAND
+               , t2.PRICE
+               , t2.SALE_PRICE
+               , t2.DISCOUNT
+               , t2.CATEGORY
+               , t2.KEYWORD
+               , t2.RATING
+               , t2.REVIEW
+               , t2.IS_ROCKET_DELIVERY
+               , t2.IS_ROCKET_FRESH
+        FROM SHOP_PRODUCT t2 
+        INNER JOIN RECOMMEND_FOOD t1 ON t1.PRODUCT_ID = t2.PRODUCT_ID
+        WHERE t1.NUTRIENT_TYPE = #{NUTRIENT_TYPE} and DIET_TYPE = #{DIET_TYPE}
+    </select>
+
+    <select id="selectSupplementsByNutrientName">
+        SELECT t2.PRODUCT_ID
+               , t2.NAME
+               , t2.URL
+               , t2.IMG_URL
+               , t2.BRAND
+               , t2.PRICE
+               , t2.SALE_PRICE
+               , t2.DISCOUNT
+               , t2.CATEGORY
+               , t2.KEYWORD
+               , t2.RATING
+               , t2.REVIEW
+               , t2.IS_ROCKET_DELIVERY
+               , t2.IS_ROCKET_FRESH
+        FROM SHOP_PRODUCT t2 
+        INNER JOIN RECOMMEND_SUPPLEMENTS t1 ON t1.PRODUCT_ID = t2.PRODUCT_ID
+        WHERE t1.RELATED_NUTRIENT = #{NUTRIENT_NAME}
+    </select>
+
+</mapper>

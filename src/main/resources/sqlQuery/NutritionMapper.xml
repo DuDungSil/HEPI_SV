@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hepi.hepi_sv.nutrition.repository.mybatis.NutritionMapper">
+
+    <!--  Nutrient 부분  -->
+
+    <select id="selectRecommendSource">
+        SELECT SOURCE
+        FROM RECOMMEND_SOURCE
+        WHERE NUTRIENT_TYPE = #{NUTRIENT_TYPE} and DIET_TYPE = #{DIET_TYPE}
+    </select>
+    
+</mapper>
